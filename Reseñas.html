@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas - El Rincón del Lector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 10px;
+            grid-column: 1 / -1;
+        }
+
+        .reseñas {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .reseña-card {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .reseña-card img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .reseña-card h3 {
+            font-family: 'Playfair Display', serif;
+            color: #5a3e2b;
+            margin: 0.5rem 0;
+        }
+
+        .autor {
+            font-style: italic;
+            color: #666;
+        }
+
+        .calificacion {
+            color: #ffd700;
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        
+        .formulario {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 10px;
+            grid-column: 1 / -1;
+        }
+
+        .formulario h2 {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            color: #5a3e2b;
+        }
+
+       
+
+        .formulario input,
+        .formulario textarea,
+        .formulario select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .formulario button {
+            background-color: #5a3e2b;
+            color: #fff;
+            padding: 0.7rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        .formulario button:hover {
+            background-color: #ffd700;
+            color: #333;
+        }
+
+        
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            grid-column: 1 / -1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>El Rincón del Lector</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Reseñas.html">Reseñas</a></li>
+                <li><a href="Quienes-Somos.html">Quienes Somos</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Reseñas Literarias</h2>
+            <p>Descubre las opiniones de nuestra comunidad sobre los últimos libros.</p>
+        </section>
+
+        
+        <section class="reseñas">
+            
+            <div class="reseña-card">
+                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=1000&auto=format&fit=crop" alt="Cien años de soledad">
+                <h3>Cien años de soledad</h3>
+                <p class="autor">Gabriel García Márquez</p>
+                <p>Una obra maestra que narra la saga de la familia Buendía en el pueblo ficticio de Macondo.</p>
+                <p class="calificacion">★★★★★</p>
+            </div>
+
+            
+            <div class="reseña-card">
+                <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?q=80&w=1000&auto=format&fit=crop" alt="1984">
+                <h3>1984</h3>
+                <p class="autor">George Orwell</p>
+                <p>Una distopía aterradora que explora los peligros del totalitarismo y la vigilancia masiva.</p>
+                <p class="calificacion">★★★★☆</p>
+            </div>
+
+           
+        </section>
+
+        
+        <section class="formulario">
+            <h2>Añadir una Reseña</h2>
+            <form action="#" method="post">
+                <input type="text" name="titulo" placeholder="Título del libro" required>
+                <input type="text" name="autor" placeholder="Autor" required>
+                <textarea name="reseña" placeholder="Escribe tu reseña aquí..." required></textarea>
+                <label for="calificacion">Calificación:</label>
+                <select name="calificacion" id="calificacion">
+                    <option value="★★★★★">★★★★★</option>
+                    <option value="★★★★☆">★★★★☆</option>
+                    <option value="★★★☆☆">★★★☆☆</option>
+                    <option value="★★☆☆☆">★★☆☆☆</option>
+                    <option value="★☆☆☆☆">★☆☆☆☆</option>
+                </select>
+                <button type="submit">Enviar Reseña</button>
+            </form>
+            <p style="text-align: center; font-size: 0.9rem; color: #666;">
+                <em>Completa el Formulario</em>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>El Rincón del Lector, Mauricio Ulloa, Daniel Coronado</p>
+    </footer>
+</body>
+</html>

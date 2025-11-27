@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <h1>El Rincón del Lector</h1>
+
+        
+        <nav>
+            <ul>
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./Reseñas.html">Reseñas</a></li>
+                <li><a href="./Quienes-Somos.html">Quienes somos</a></li>
+                <li><a href="./Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <section class="parrafo">
+            <h2>Comparte tus reseñas literarias</h2>
+            <p>¿Leíste un libro increíble? ¡Cuéntanoslo!</p>
+        
+        </section>
+        
+        <section class="reseñas" id="reseñasContenedor">
+            <div class="comentario">
+                <h3>Título del Libro</h3>
+                <p class="autor">Autor: Nombre del Autor</p>
+                <p class="reseña-texto">Esta es una reseña de ejemplo. Aquí los usuarios pueden compartir sus opiniones sobre libros, películas, música, etc.</p>
+                <p class="calificacion">★★★★★</p>
+            </div>
+        </section>
+        
+        <section class="formulario">
+            <h2>Añadir Reseña</h2>
+            <form id="reseñaForm">
+                <input type="text" id="titulo" placeholder="Título del Libro" required>
+                <input type="text" id="autor" placeholder="Autor" required>
+                <textarea id="reseña" placeholder="Escribe tu reseña aquí..." required></textarea>
+                <label for="calificacion">Calificación:</label>
+                <select id="calificacion" required>
+                    <option value="★★★★★">★★★★★</option>
+                    <option value="★★★★☆">★★★★☆</option>
+                    <option value="★★★☆☆">★★★☆☆</option>
+                    <option value="★★☆☆☆">★★☆☆☆</option>
+                    <option value="★☆☆☆☆">★☆☆☆☆</option>
+                </select>
+                <button type="submit">Publicar Reseña</button>
+            </form>
+        </section>
+    
+    </main>
+    
+    <footer>
+        <p>El Rincón del Lector, Mauricio Ulloa, Daniel Coronado</p>
+    </footer>
+    
+</body>
+</html>
